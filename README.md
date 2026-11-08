@@ -52,19 +52,19 @@ A USB-C connector brings in 5 V (`VBUS`) for charging and carries USB data to th
 
 
 ### Battery Charger
-A charger IC with an inductor charges the battery from `VBUS`. It has an I2C connection to the microcontroller and a thermistor input for battery temperature, so the firmware can monitor and control charging. *(Confirm: part number and charge current.)*
+A charger IC with an inductor charges the battery from `VBUS`. It has an I2C connection to the microcontroller and a thermistor input for battery temperature, so the firmware can monitor and control charging.
 
 <img width="481" height="454" alt="image" src="https://github.com/user-attachments/assets/e5a1bac1-9e8d-4f6f-b3de-cad3dde1ddde" />
 
 
 ### Buck-Boost Converter
-A buck-boost converter keeps its output steady whether the battery voltage is above or below the target as the battery drains. *(Confirm: part number and output voltage.)*
+A buck-boost converter keeps its output steady whether the battery voltage is above or below the target as the battery drains. 
 
 <img width="481" height="219" alt="image" src="https://github.com/user-attachments/assets/fa4ce800-b1f5-4681-80e8-8b9723bef28d" />
 
 
 ### 3.3V Boost
-A small switching regulator that provides the `+3V3` rail used by the microcontroller and the sensors. *(Confirm: input source and part number.)*
+A small switching regulator that provides the `+3V3` rail used by the microcontroller and the sensors. 
 
 <img width="999" height="317" alt="image" src="https://github.com/user-attachments/assets/14021df6-75f6-43bf-a657-60280f63d195" />
 
@@ -83,7 +83,7 @@ The central microcontroller. Every other block connects to it:
 
 
 ### Crystal
-An external crystal gives the microcontroller a precise clock. The block holds a high-speed crystal for the main clock, plus a second, low-speed one for timekeeping. *(Confirm: frequencies and load capacitors.)*
+An external crystal gives the microcontroller a precise clock. The block holds a high-speed crystal for the main clock, plus a second, low-speed one for timekeeping. 
 
 <img width="585" height="520" alt="image" src="https://github.com/user-attachments/assets/e2a83a35-cffd-4814-9b1a-d432f71be797" />
 
@@ -94,7 +94,7 @@ Every chip needs small capacitors placed right next to its power pins to absorb 
 <img width="495" height="512" alt="image" src="https://github.com/user-attachments/assets/595c12b0-a116-47d8-b66c-3b27c6c56e7b" />
 
 ### Buttons
-Push buttons for resetting the microcontroller and entering its bootloader (boot mode), with a resistor and capacitor to give a clean, debounced signal. *(Confirm: which button does what.)*
+Push buttons for resetting the microcontroller and entering its bootloader (boot mode), with a resistor and capacitor to give a clean, debounced signal. 
 
 <img width="541" height="523" alt="image" src="https://github.com/user-attachments/assets/253d204a-ae54-4b96-8f78-aeec72f5b956" />
 
@@ -105,13 +105,13 @@ Header connectors for two servo motors. Each has a power pin (`+5V`), ground, an
 <img width="446" height="508" alt="image" src="https://github.com/user-attachments/assets/4995cf86-6fdb-4fb6-b79d-997b9b773e87" />
 
 ### IMU
-An inertial measurement unit: a gyroscope (rotation) and accelerometer (acceleration) in one chip. This is the main sensor for working out the vehicle's orientation. *(Confirm: part number and whether it's connected by SPI or I2C.)*
+An inertial measurement unit: a gyroscope (rotation) and accelerometer (acceleration) in one chip. This is the main sensor for working out the vehicle's orientation.
 
 <img width="1171" height="402" alt="image" src="https://github.com/user-attachments/assets/8210305a-90c4-4f1c-bb9b-3c73f60e148c" />
 
 
 ### Pressure Sensor
-A barometric pressure sensor, used to estimate altitude because air pressure drops as height increases. *(Confirm: part number and interface.)*
+A barometric pressure sensor, used to estimate altitude because air pressure drops as height increases. 
 
 <img width="1201" height="291" alt="image" src="https://github.com/user-attachments/assets/f2be20ff-6e98-40b1-9043-87d2fa8ded4d" />
 
