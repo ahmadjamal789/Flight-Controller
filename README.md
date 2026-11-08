@@ -62,6 +62,7 @@ A buck-boost converter keeps its output steady whether the battery voltage is ab
 
 ### 3.3V Boost
 A small switching regulator that provides the `+3V3` rail used by the microcontroller and the sensors. *(Confirm: input source and part number.)*
+
 <img width="999" height="317" alt="image" src="https://github.com/user-attachments/assets/14021df6-75f6-43bf-a657-60280f63d195" />
 
 
